@@ -8,7 +8,7 @@
     <style>
         body,
         textarea {
-            font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+            font-family: 'Varela Round', sans-serif;
             font-size: 20px;
         }
         
@@ -24,17 +24,22 @@
         
         .title-bar {
             margin-bottom: 20px;
+            font-size: 60px;
+        }
+		
+        .title-bar-button {
+            margin-bottom: 20px;
             font-size: 30px;
         }
-        
+		
         #title {
-            color: #ffa500;
+            color: #7dffcf;
         }
         
         .button {
             float: right;
             text-decoration: none;
-            background-color: #555;
+            background-color: #7dffcf;
             color: #FFF;
             width: 35px;
             height: 35px;
@@ -47,8 +52,8 @@
 
 <body>
     <div class="title-bar">
-        <a id="back" class="button" href="javascript:history.back()">&lt;</a>
-        <a id="settings" class="button" href="#AllContent">#</a>
+        <a id="back" class="button title-bar-button" href="javascript:history.back()">&lt;</a>
+        <a id="settings" class="button title-bar-button" href="#AllContent">#</a>
         <span id="title"></span>
     </div>
     <textarea id="editor" rows="20" spellcheck="false">
